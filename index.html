@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Devon J Kelley" />
+    <meta charset="UTF-8" />
+    <title>Shark Bone Insurance Claim Reporting Tool</title>
+    <style>
+    body {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      min-width: 400px;
+    }
+    #header {
+      background-color: darkslategray;
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    label {
+      margin-right: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Shark Bone Insurance</h1>
+      <h2>Claim Reporting Tool</h2>
+    </div>
+    <div id="reporter">
+      <h3>Begin your report:</h3>
+      <form>
+        <p><label for="name">Your Name</label><input type="text" id="name" /></p>
+        <p><label for="number">Your Phone Number</label><input type="text" id="number" /></p>
+        <p><label for="policy">Shark Bone Policy Number</label><input type="text" id="policy" /></p>
+        <button type="submit" id="submitBtn">Begin Report</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    // grab handles to the elements I'll need
+    const submit = document.getElementById("submitBtn");
+    const reporter = document.getElementById("reporter");
+
+    // create the event listener for the initial submit button
+    submit.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      // placeholder code
+      alert("Claim started!");
+    })
+  </script>
+</html>
